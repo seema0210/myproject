@@ -1,0 +1,232 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    background: #fff;
+    color: #333;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(94, 93, 93);
+    color: #fff;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+}
+#navbar li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+}
+.navbar .logo{
+    padding: 25px;
+}
+.nav a:hover{
+    border-bottom: 2px solid #28a745;
+}
+.hero .content{
+    background: url('https://images.unsplash.com/photo-1611416517780-eff3a13b0359?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2l0eSUyMGF0JTIwbmlnaHR8ZW58MHx8MHx8&w=1000&q=80') no-repeat center center/cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+}
+.hero .content .for-css{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    text-align: center;
+}
+.hero .content h1{
+    font-size: 45px;
+    padding-bottom: 11px;
+}
+.hero .content p{
+    font-size: 18px;
+    padding-bottom: 11px;
+}
+.hero::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0,0,0,0.5);
+}
+.hero *{
+    z-index: 10;
+}
+#about{
+    padding: 25px;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+#about .flex-items{
+    padding: 10px;
+    text-align: center;
+}
+#about .flex-items i{
+    color: #fff;
+    background:#28a73f;  ;
+    border-radius: 50%;
+    padding: 18px;
+    margin-bottom: 19px;
+}
+#about .flex-items h2{
+    font-weight: bold;
+    margin-bottom: 13px;
+}
+.solutions .row{
+    display: flex;
+}
+.solutions .row .column-1{
+
+    width: 50%;
+}
+.solutions .row .column-1 img{
+  width: 100%; 
+  height: 100%;
+  object-fit: cover;
+}
+.solutions .row .column-2{
+    text-align:flex-start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #28a73f;
+    color: #fff;
+    padding: 30px;
+    width: 50%;
+}
+.solutions .row .column-2 h2{
+    font-size: 30px;
+    font-weight: 100;
+    margin: 15px 0;
+}
+.section-header{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.section-header h2{
+    font-size: 40px;
+    margin: 18px 0;
+}
+.flex-grid .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+.flex-grid .column img{
+    width: 260px;
+    height: 200px;
+}
+.flex-grid .column{
+    flex: 25%;
+    min-width: 25%;
+    padding: 0 4px;
+}
+.flex-revers .row{
+    flex-direction: row-reverse;
+    /* opacity: 10 !important; */
+}
+.flex-revers .column-1 img{
+    opacity: none;
+}
+.flex-revers .column.column-2{
+    background: rgb(18, 125, 248);
+}
+.team .section-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.team .flex-items{
+    display: flex;
+    text-align: center;
+}
+ .team .flex-items img{
+    width: 340px;
+    height: 250px;
+    margin: 10px;
+    border-radius: 50%;
+    
+}
+.flex-items h4, p{
+margin: 9px;
+}
+.solutions .column-2.cont-col{
+    background: rgb(231, 230, 230);
+}
+/* contact  */
+.solutions .row{
+    width: 100%;
+    margin: 0px 0;
+}
+.solutions .call-back label{
+    display: block;
+    margin-bottom: 4px;
+    
+}
+.solutions .call-back input{
+    width: 100%;
+    padding: 4px;
+    border: #f5f5f5 1px solid;
+}
+.solutions .call-back input:focus{
+    outline-color:#28a745 ;
+}
+.solutions .call-back .btn{
+    /* width: 4rem; */
+    /* margin: auto; */
+}
+.solutions .call-back h2{
+    text-align: center;
+    margin-bottom: 5px;
+    color:#333;
+}
+.solutions .call-back .form-control{
+    padding: 8px;
+}
+/* footer  */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #444;
+    color: #fff;
+    padding: 15px 0 ;
+}
+footer .social a{
+    color: #fff;
+    margin-left: 13px;
+}
+footer .social a:hover{
+    color: #28a745;
+}
+.clr{
+    clear: both;
+}
